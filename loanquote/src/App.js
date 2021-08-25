@@ -16,7 +16,11 @@ function App() {
     componente = <Mensaje/>
   }
   else {
-    componente = <Resultado/>
+    componente = <Resultado
+                      total={total}
+                      plazo={plazo}
+                      cantidad={cantidad}
+                  />
   }
 
   return (
